@@ -1,10 +1,10 @@
 name: "2016-amsterdam" # The name of the event. Four digit year with the city name in lower-case, with no spaces.
-year: "2016" # The year of the event. Make sure it is in quotes.
+year: 2016 # The year of the event. Make sure it is in quotes.
 city: "Amsterdam" # The city name of the event. Capitalize it.
 friendly: "2016-amsterdam" # Four digit year and the city name in lower-case. Don't forget the dash!
 
 # Datus and status
-status: "current" # Options are "past" or "current". Use "current" for upcoming.
+status: "past" # Options are "past" or "current". Use "current" for upcoming.
 startdate: 2016-06-29  # The start date of your event. Leave blank if you don't have a venue reserved yet.
 enddate: 2016-07-01  # The end date of your event. Leave blank if you don't have a venue reserved yet.
 cfp_date_start: 2016-01-15 # start accepting talk proposals.
@@ -25,6 +25,8 @@ proposal_email: "organizers-amsterdam-2016@devopsdays.org" # Put your proposal e
 sponsors_accepted: "no"
 sponsors:
   # gold
+  - id: atlassian
+    level: gold
   - id: github
     level: gold
   - id: microsoft
@@ -65,6 +67,10 @@ sponsors:
     level: bronze
   - id: pcextreme
     level: bronze
+  - id: prowareness
+    level: bronze
+  - id: radicaltech
+    level: bronze
   - id: 2015-sdl
     level: bronze
   - id: workiva
@@ -78,11 +84,17 @@ sponsors:
   # Community
   - id: oreilly
     level: community
+  # Pre-event Sponsor (a Harm special)
+  - id: microsoft
+    level: preevent
 
 # Declare the sponsors for dodAMS 2016
 sponsor_levels:
   - id: bbq
     label: BBQ
+    max: "1"
+  - id: preevent
+    label: "Pre Event"
     max: "1"
   - id: beer
     label: Beer
@@ -106,7 +118,7 @@ nav_elements: # List of pages you want to show up in the navigation of your page
 #  - name: propose
   - name: speakers
   - name: location
-  - name: registration
+#  - name: registration
   - name: sponsor
   - name: contact
   - name: conduct
@@ -129,6 +141,9 @@ speakers:
   - id: "victoria-jeffrey"
     level: talk
   - id: "harm-weites"
+    level: talk
+  # Diversity workshops
+  - id: "jan-kaan"
     level: talk
   # Security Track
   - id: "melanie-rieback"
@@ -172,6 +187,8 @@ speakers:
   - id: "jan-de-vries"
     level: talk
   - id: "jim-leitch"
+    level: talk
+  - id: "mark-van-holsteijn"
     level: talk
   - id: "michael-ducy"
     level: talk
